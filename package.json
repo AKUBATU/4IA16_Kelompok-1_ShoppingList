@@ -1,0 +1,20 @@
+{
+  "name": "shopping-note-modern",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -n SERVER,CLIENT -c auto \"npm:server:dev\" \"npm:client:dev\"",
+    "server:dev": "npm --workspace server run dev",
+    "client:dev": "npm --workspace client run dev",
+    "db:push": "npm --workspace server run db:push",
+    "db:seed": "npm --workspace server run db:seed",
+    "build": "npm --workspace client run build",
+    "start": "npm --workspace server run start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}

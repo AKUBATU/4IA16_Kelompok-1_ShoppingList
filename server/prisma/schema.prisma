@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Item {
+  id        Int      @id @default(autoincrement())
+  name      String
+  quantity  Int      @default(1)
+  unit      String?  // pcs, kg, dll (opsional)
+  category  String?  // Makanan, Minuman, dll (opsional)
+  priority  Int      @default(2) // 1=tinggi,2=normal,3=rendah
+  bought    Boolean  @default(false)
+  note      String?  // catatan opsional
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
