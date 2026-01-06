@@ -23,17 +23,20 @@ export function SelectTrigger({ className, children, ...props }) {
   );
 }
 
-export function SelectContent({ className, ...props }) {
+export function SelectContent({ className, children, ...props }) {
   return (
     <SelectPrimitive.Portal>
       <SelectPrimitive.Content
+        position="popper"
         className={cn(
           "z-50 overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-lg dark:border-zinc-800 dark:bg-zinc-950",
           className
         )}
         {...props}
       >
-        <SelectPrimitive.Viewport className="p-1" />
+        <SelectPrimitive.Viewport className="p-1">
+          {children}
+        </SelectPrimitive.Viewport>
       </SelectPrimitive.Content>
     </SelectPrimitive.Portal>
   );
