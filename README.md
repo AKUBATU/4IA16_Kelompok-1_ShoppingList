@@ -2,8 +2,6 @@
 
 Aplikasi **Shopping Note** modern dengan fitur CRUD lengkap, UI modern (light/dark), search & filter, dan penyimpanan data pakai **SQLite**.
 
-✅ **Versi FIX**: Tidak perlu bikin `.env` / `DATABASE_URL` lagi. Prisma memakai SQLite lokal default.
-
 ## Fitur
 - CRUD item belanja: tambah, edit, hapus
 - Tandai item **dibeli / belum**
