@@ -12,6 +12,11 @@ Aplikasi **Shopping Note** modern dengan fitur CRUD lengkap, UI modern (light/da
 
 ---
 
+## Role
+- Hafizhan Noor Amril (Programmer)
+- Regina Prisillia Turana (Script Writer)
+- Stephen Helenus (Project Manager)
+
 ## Prasyarat
 - Node.js **18+** (disarankan 20+)
 
